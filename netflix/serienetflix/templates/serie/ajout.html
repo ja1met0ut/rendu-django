@@ -1,0 +1,12 @@
+{extends 'serienetflix/main.html'}
+{% block title %}
+ajout du site
+{% endblock %}
+
+{% block content %}
+<form method="post" action="/serie/traitement">
+    {% csrf_token %}
+    {{ form.as_ul }}
+    <input type="submit" value="envoyer les données"/>
+</form>
+{% block content %}

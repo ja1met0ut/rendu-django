@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}</title>
+    titre squelette
+    {% endblock %}
+</head>
+<body>
+<h1>Mon site web </h1>
+    <aside id="sidebar">
+        {% block sidebar %}
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/serienetflix/index">Index</a></li>
+        </ul>
+        {% endblock %}
+    </aside>
+
+
+{%block content %}
+
+{% endblock %}
+</body>
+</html>

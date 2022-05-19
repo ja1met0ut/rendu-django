@@ -1,0 +1,12 @@
+{extends 'serienetflix/main.html'}
+{% block title %}
+index du site
+{% endblock %}
+<a href="ajout/">ajouter une série</a>
+<ol>
+    {% for s in liste %}
+        <li>{{s}} date de parution {{s.date_parution|date:"d/m/Y"}} <a href="affiche/{{s.id}}"> afficher les détails </a> <a href="delete/{{s.id}}"> effacer </a>
+            <a href="update/{{s.id}}">mise a jour </a></li>
+    {%endfor%}
+</ol>
+{% endblock %}

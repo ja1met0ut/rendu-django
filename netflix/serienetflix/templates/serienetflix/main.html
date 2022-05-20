@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    bienvenue sur le site du divertissement
+
+</head>
+<body>
+<h1>voici les séries netflix</h1>
+    <aside id="sidebar">
+        {% block sidebar %}
+        <ul>
+
+            <li><a href="/serienetflix/index">Index</a></li>
+        </ul>
+        {% endblock %}
+    </aside>
+
+
+{%block content %}
+
+{% endblock %}
+</body>
+</html>

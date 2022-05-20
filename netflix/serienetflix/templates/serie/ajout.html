@@ -1,4 +1,4 @@
-{extends 'serienetflix/main.html'}
+{% extends 'serienetflix/main.html' %}
 {% block title %}
 ajout du site
 {% endblock %}
@@ -9,4 +9,4 @@ ajout du site
     {{ form.as_ul }}
     <input type="submit" value="envoyer les données"/>
 </form>
-{% block content %}
+{% endblock %}
